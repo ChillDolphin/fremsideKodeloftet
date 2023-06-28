@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger {
+  position: fixed;
+  width: 5em;
+  height: 5em;
+  transition: 0.8s;
+  overflow: hidden;
+  display: flex;
+  z-index: 10;
+}
+
+.burger:hover {
+  width: 100vw;
+}
+
+.navItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.navItem {
+  padding: 1em;
+  margin: 4px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.section1 {
+  height: 100vh;
+  position: relative;
+  clip-path: inset(0);
+  flex-direction: column;
+}
+
+.BG {
+  transform-origin: center;
+  object-fit: cover;
+  position: fixed;
+  width: 100%;
+  z-index: -5;
+  animation-name: ambient;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ambient {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 110%;
+  }
+}
+
+.converter {
+  width: 200px;
+  height: 3em;
+  border-radius: 8px;
+  border: solid paleturquoise;
+  padding-left: 1em;
+  margin: 0.1em;
+}
+
+#calc {
+  margin-top: 1em;
+  width: 200px;
+  height: 3em;
+  border-radius: 8px;
+  border: solid paleturquoise;
+  cursor: pointer;
+}
+
+.error {
+  display: none;
+  transition: 0.5s;
+}
+
+h2 {
+  padding: 0.8em;
+  margin: 0.5em;
+  background-color: paleturquoise;
+  font-size: 32px;
+}
+
+hr {
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+.section2 {
+  min-height: 250px;
+  font-size: 3em;
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  width: 4em;
+}
+
+.skill {
+  height: 256px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.section3 {
+  height: 100%;
+  margin: 2em;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section4 {
+  min-height: 600px;
+  background-image: url(img/pxfuel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+  font-size: 2em;
+}
+
+.section4 h3 {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+.section4 p {
+  padding-left: 32px;
+}
+
+.spacer {
+  height: 128px;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bump {
+  transform: translateX(10px);
+}
+
+.link {
+  height: 10em;
+  width: 10em;
+  margin: 2em;
+  transition: 0.3s;
+}
+
+.link:hover {
+  scale: 1.5;
+}
+
+.icon {
+  image-rendering: pixelated;
+  width: 10em;
+}
+
+.section6 {
+  display: flex;
+  justify-content: center;
+  background-color: paleturquoise;
+}
+
+.contact {
+  padding: 1em;
+  transition: 0.5s;
+}
+
+.contact:hover {
+  color: pink;
+}
+
+@media only screen and (max-width: 625px) {
+  .burger:hover {
+    height: 10em;
+  }
+
+  h1 {
+    padding: 1em;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .section2 {
+    flex-direction: column;
+  }
+
+  .section4 {
+    height: 920px;
+  }
+
+  .spacer h4 {
+    padding: 1em;
+  }
+
+  .section5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section4 p {
+    padding: 0px;
+  }
+
+  .section6 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .BG {
+    height: 100%;
+  }
+}

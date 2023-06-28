@@ -1,0 +1,144 @@
+:root {
+    --Dark: #030027;
+    --Light: #E6E4CE;
+    --Pink: #F45B69;
+    --LPurple: #B388EB;
+    --Purple: #58355E;
+
+}
+
+.BG {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 170%;
+    background: var(--Dark);
+    background: linear-gradient(180deg, rgb(2, 0, 14) 0%, rgb(164, 126, 172) 100%);
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--Dark);
+}
+
+h1 {
+    display: flex;
+    font-size: 4em;
+    align-self: center;
+    color: var(--Pink);
+}
+
+p {
+    align-self: center;
+    padding: 1em;
+    color: var(--Light);
+}
+
+.logo {
+    padding: 1em;
+    height: 100%
+}
+
+.MedBubbles {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.bubbleMed {
+    margin: 1em;
+    height: 8em;
+    width: 40%;
+    border-radius: 1em;
+    background-color: var(--Pink);
+}
+
+.bubbleLong {
+    margin: 1em;
+    height: 8em;
+    min-width: calc(80% + 2em);
+    max-width: 85%;
+    border-radius: 1em;
+    background-color: var(--Purple);
+}
+
+.longBubbles {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ShortBubbles {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.bubbleShort {
+    margin: 1em;
+    height: calc((80vw / 3) - 1em);
+    width: calc((80% / 3) - 1em);
+    max-height: 16em;
+    border-radius: 1em;
+    background-color: var(--LPurple);
+}
+
+.bubble {
+    display: flex;
+    border: solid var(--Light);
+    transition: 0.5s;
+    min-height: fit-content;
+    justify-content: center;
+}
+
+.welcome {
+    height: 16em;
+}
+
+.thin {
+    height: 3em;
+}
+
+.bubble:hover {
+    scale: 1.1;
+}
+
+.link {
+    align-items: center;
+    color: var(--Dark);
+    width: calc((80vw / 3) - 1em);
+}
+
+@media only screen and (max-width: 600px) {
+    .bubbleMed {
+        height: fit-content;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .maxSize {
+        max-width: 800px;
+    }
+}

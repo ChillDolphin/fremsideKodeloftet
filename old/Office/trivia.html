@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="trivia.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="trivia.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The office - Actors</title>
+</head>
+
+<body>
+  <div class="menu">
+    <ul id="menuid">
+      <li class="button" id="trivia"><a href="trivia.html">Trivia</a></li>
+      <li class="button" id="quotes"><a href="quotes.html">Quotes</a></li>
+      <li class="button" id="games"><a href="games.html">Games</a></li>
+      <li class="button" id="actors"><a href="actors.html">Actors</a></li>
+      <li class="button" id="home"><a href="index.html">Home</a></li>
+    </ul>
+  </div>
+
+  <h1 id="title">The office</h1>
+  <div class="questions">
+    <form name="myForm" action="javascript:checkmark()" onsubmit="return validateForm()" method="post">
+      <input class="question" type="text" placeholder="Who plays the character Michael Scott?" name="fname" />
+      <input class="submit" type="submit" value="Submit" />
+    </form>
+    <div id="check">
+      <img src="img/check.png" alt="checkmark" id="checkmark" />
+    </div>
+    <hr />
+    <br />
+    <form name="myForm2" action="javascript:checkmark()" onsubmit="return validateForm2()" method="post">
+      <input class="question" type="text" placeholder="Who is Jim in love with?" name="fname2" />
+      <input class="submit" type="submit" value="Submit" />
+    </form>
+    <hr />
+    <br />
+    <form name="myForm3" action="javascript:checkmark()" onsubmit="return validateForm3()" method="post">
+      <input class="question" type="text" placeholder="What was Phyllis's nickname in high school?" name="fname3" />
+      <input class="submit" type="submit" value="Submit" />
+    </form>
+    <hr />
+    <br />
+    <form name="myForm4" action="javascript:checkmark()" onsubmit="return validateForm4()" method="post">
+      <input class="question" type="text" placeholder="What game does Michael play every night before sleeping?"
+        name="fname4" />
+      <input class="submit" type="submit" value="Submit" />
+    </form>
+    <hr />
+    <br />
+    <form name="myForm5" action="javascript:checkmark()" onsubmit="return validateForm5()" method="post">
+      <input class="question" type="text" placeholder="What is Dwight's porcupine called?" name="fname5" />
+      <input class="submit" type="submit" value="Submit" />
+    </form>
+    <hr />
+    <br />
+    <form name="myForm6" action="javascript:checkmark()" onsubmit="return validateForm6()" method="post">
+      <input class="question" type="text" placeholder="Is Rajanigandha a boys name?" name="fname6" />
+      <input class="submit" type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+
+</html>

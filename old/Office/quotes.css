@@ -1,0 +1,158 @@
+:root {
+  --BG: #464646;
+  --White: #dadada;
+  --Dark: #0b2b53;
+  --Light: #049a9e;
+}
+
+body {
+  background-color: var(--BG);
+  font-family: "Courier Prime", monospace;
+}
+
+#title {
+  position: absolute;
+  cursor: default;
+  top: 10px;
+  left: 32px;
+  background-color: var(--Dark);
+  color: var(--White);
+  border: solid;
+  border-radius: 10px;
+  padding: 8px;
+  z-index: 10;
+}
+
+.menu {
+  position: relative;
+  transform: translateY(-250px);
+  top: 0px;
+}
+
+ul {
+  position: absolute;
+  right: 16px;
+  list-style-type: none;
+  display: flex;
+  border-bottom: solid;
+  padding-bottom: 16px;
+  border-color: var(--White);
+}
+
+.button {
+  padding: 8px;
+  border: solid;
+  border-color: var(--White);
+  margin-right: 10px;
+  background-color: var(--Light);
+  border-radius: 10px;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.button:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+a {
+  color: var(--White);
+  text-decoration: none;
+}
+
+li {
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+  ul {
+    flex-direction: column;
+    border: none;
+    z-index: 11;
+  }
+
+  h2 {
+    position: absolute;
+    font-size: 24px;
+    width: 200px;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .images {
+    max-width: 269px;
+  }
+
+  .pic:hover {
+    position: sticky;
+  }
+}
+
+#quotes {
+  border-color: var(--Dark);
+}
+
+h2 {
+  position: absolute;
+  top: 128px;
+  left: 64px;
+  color: var(--White);
+  font-size: 40px;
+  z-index: 0;
+  cursor: default;
+}
+
+.images {
+  margin-top: 250px;
+  text-align: center;
+  position: relative;
+}
+
+.pic {
+  width: 200px;
+  height: 360px;
+  object-fit: cover;
+  margin: 10px;
+  border: ridge;
+  border-width: 12px;
+  border-color: var(--Light);
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+p {
+  display: none;
+  border: solid;
+  padding: 8px;
+  text-align: center;
+  font-size: 32px;
+  transition: all;
+  transition-duration: 0.3s;
+  position: absolute;
+  z-index: 11;
+}
+
+.pic:hover+p {
+  display: block;
+  position: absolute;
+  background-color: var(--Dark);
+  color: var(--White);
+}
+
+.pic:hover {
+  transform: scale(1.5);
+}
+
+p:hover {
+  display: block;
+  position: absolute;
+  padding-left: 64px;
+  background-color: var(--Dark);
+  color: var(--White);
+}
+
+.spacer {
+  height: 128px;
+}

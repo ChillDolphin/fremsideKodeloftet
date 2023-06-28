@@ -1,0 +1,101 @@
+:root {
+    --White: #d8e4ff;
+    --Black: #040403;
+    --Gray: #545e56;
+    --Yellow: #f0c402;
+    color-scheme: only light;
+    display: flex;
+    justify-content: center;
+    background-color: var(--Gray);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background-color: var(--Black);
+    border: solid var(--White);
+    border-radius: 2em;
+    display: flex;
+}
+
+img {
+    max-width: 200px;
+    border-radius: 100%;
+}
+
+#logo {
+    image-rendering: pixelated;
+    min-width: 64px;
+    max-width: 128px;
+    height: 4em;
+    margin-left: 0.5em;
+    margin-right: auto;
+    border-radius: 0%;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    color: var(--Yellow);
+    font-size: 1.2em;
+    margin-top: 1.8em;
+    margin-right: 2em;
+    cursor: pointer;
+    transition: 0.5s;
+    border: solid var(--White);
+    background-color: var(--Gray);
+    border-radius: 1em;
+    color: var(--Yellow);
+    max-width: max-content;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Yellow);
+}
+
+nav {
+    background-color: var(--Black);
+    border: solid;
+    border-radius: 2em;
+    width: 640px;
+    border: solid var(--White);
+    display: inline;
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Black);
+    border: solid var(--White);
+    border-radius: 2em;
+    color: var(--White);
+    width: 600px;
+}
+
+p {
+    font-size: 2em;
+}
+
+.regel {
+    font-size: 1.2em;
+    margin: 1em;
+}
+
+@media only screen and (max-width: 700px) {
+    :root {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        padding-left: 2em;
+        width: 300px;
+        font-size: 0.8em;
+    }
+
+    .liste {
+        padding-left: 2em;
+        width: 300px;
+        font-size: 0.8em;
+    }
+}

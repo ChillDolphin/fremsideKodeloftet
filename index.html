@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/Crown.ico" type="image/icon type" />
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="burger">
+        <div class="navItems">
+          <a class="navItem" href="#top">Menu</a>
+          <a class="navItem" href="#about">About</a>
+          <a class="navItem" href="#skills">Converter</a>
+          <a class="navItem" href="#work">My work</a>
+          <a class="navItem" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section1 center">
+      <img class="BG" src="img/BG.jpg" alt="Background image of mushrooms" />
+      <h2 class="center">Welcome.</h2>
+    </section>
+    <section class="section2 center">
+      <h1 id="about">Viktor Manger</h1>
+      <img src="img/man.jpg" class="avatar" />
+    </section>
+    <hr />
+
+    <section class="section3">
+      <p>
+        My name is Viktor, I'm 22 years old, and live in beautiful Norway! My
+        main interests are nature and computers. I spend a lot of time on my
+        bike, and fishing by the lakeside. But if the weather is bad, you'll
+        most likely find me in front of my computer, either playing, or trying
+        to make a video game. My professional experience is within the
+        scaffolding business, a workplace full of problem-solving and
+        communication, two essential skills every front-end developer needs.
+      </p>
+    </section>
+
+    <section class="section4" id="skills">
+      <h3>This is a little distance-unit converter</h3>
+      <div class="skills">
+        <p>Convert from:</p>
+        <input class="converter" id="fromInput" />
+        <select class="converter" id="unit1">
+          <option>Meters</option>
+          <option>Feet</option>
+          <option>Lightyears</option>
+        </select>
+        <p>to:</p>
+        <input class="converter" id="output" readonly />
+        <select class="converter" id="unit2">
+          <option>Meters</option>
+          <option>Feet</option>
+          <option>Lightyears</option>
+        </select>
+        <button id="calc">Calculate!</button>
+        <p class="error" id="error">
+          Error: Please select two different units!
+        </p>
+      </div>
+    </section>
+
+    <div class="spacer">
+      <h4>These are my other websites:</h4>
+    </div>
+
+    <section class="section5" id="work">
+      <a href="old/Gul Bil/index.html">
+        <div class="link">
+          <img class="icon" src="old/Gul Bil/favicon.ico" alt="A yellow car" />
+        </div>
+      </a>
+      <a href="old/Office/index.html">
+        <div class="link">
+          <img class="icon bump" src="img/Dwight.ico" alt="Dwight Schrute" />
+        </div>
+      </a>
+      <a href="old/Portfolioooo/index.html">
+        <div class="link">
+          <img
+            class="icon"
+            src="img/Portfolo.ico"
+            alt="Some pink and purple boxes"
+          />
+        </div>
+      </a>
+    </section>
+
+    <div class="spacer section6">
+      <h4 id="contact">Contact me here:</h4>
+    </div>
+
+    <footer class="section6">
+      <a href="mailto: viktor.manger@gmail.com">
+        <div class="contact">viktor.manger@gmail.com</div>
+      </a>
+      <a href="old/CV Viktor.pdf" download="CV Viktor">
+        <div class="contact">Download my CV</div>
+      </a>
+    </footer>
+  </body>
+</html>
